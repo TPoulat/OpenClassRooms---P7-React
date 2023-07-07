@@ -1,16 +1,24 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import banner from "../../assets/img/banner.png"
-
+import PropTypes from 'prop-types'
  
-function Banner() {
+function Banner({image}) {
+  const bannerTitle = "Chez vous, partout et ailleurs";
+
     return (
         <div className='banner'>
-          <Link to="/">
-            <img className='banner_logo' alt="HomeLogo" src={banner} />
-          </Link>
+            <img className='banner_img' alt="Image de la bannière" src={image} />
+            <h1 className='banner_text'>{bannerTitle}</h1>
          </div>
       )
     }
+
+Banner.propTypes = {
+  image: PropTypes.string.isRequired,
+  
+}
+
+Banner.defaultProps = {
+    title: 'Chez vous, partout et ailleurs'
+}
 
 export default Banner
