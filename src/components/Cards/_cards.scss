@@ -10,6 +10,18 @@
     transform: scale(1);
     transition: transform 300ms;
 
+    @include media-query(tablet) {
+        width: 270px;
+        height: 270px;
+        margin: 2% 0%;
+    }
+
+    @include media-query(mobile) {
+        width: 335px;
+        height: 255px;
+        margin: 2% 0%;
+    }
+
     &_img {
         position: absolute;
         object-fit: cover;
@@ -35,6 +47,14 @@
         color: white;
         margin: 15px 10px;
         z-index: 1;
+
+        @include media-query(tablet) {
+            margin: 10px 10px;
+        }
+
+        @include media-query(mobile) {
+            margin: 5px 10px;
+        }
     }
 
     &:hover {

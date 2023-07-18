@@ -4,6 +4,12 @@
     padding: 75px 0px 0px 0px;
     background-color: black;
 
+    @include media-query(mobile) {
+        padding: 65px 0px 0px 0px;
+        height: 145px;
+    }
+
+
     &_link {
         display: flex;
         justify-content: center;
@@ -26,5 +32,12 @@
         color: white;
         margin: 30px 0px 0px 0px;
 
+        @include media-query(tablet) {
+            font-size: 18px;
+        }
+
+        @include media-query(mobile) {
+            font-size: 12px;
+        }
     }
 }

@@ -15,6 +15,12 @@
         transform: translateY(10px);
         font-size: 18px;
         height: 47px;
+
+        @include media-query(mobile) {
+            height: 30px;
+            border-radius: 5px;
+        }
+
     }
 
     &_title {
@@ -23,6 +29,9 @@
         margin: 0px;
         padding: 0px;
 
+        @include media-query(mobile) {
+            font-size: 13px;
+        }
     }
 
     &_hidden {
@@ -31,10 +40,10 @@
         display: none;
         opacity: 0;
         /*       @if $visible {
-          display: flex;
-          height: fit-content;
-          opacity: 1;
-      }; */
+            display: flex;
+            height: fit-content;
+            opacity: 1;
+        }; */
 
         &__CollapseText {
             display: flex;
@@ -50,6 +59,15 @@
             line-height: 1.5em;
             background-color: #F6F6F6;
 
+            @include media-query(tablet) {
+                font-size: 16px;
+                height: 190px;
+            }
+
+            @include media-query(mobile) {
+                font-size: 12px;
+                height: 145px;
+            }
         }
     }
 }
@@ -60,6 +78,14 @@
     height: 230px;
     background-color: #F6F6F6;
     border-radius: 10px;
+
+    @include media-query(tablet) {
+        height: 190px;
+    }
+
+    @include media-query(mobile) {
+        height: 145px;
+    }
 
     >p {
         display: flex;
@@ -72,6 +98,14 @@
         font-weight: 400;
         line-height: 1.5em;
 
+        @include media-query(tablet) {
+            font-size: 16px;
+        }
+
+        @include media-query(mobile) {
+            font-size: 12px;
+            padding: 25px;
+        }
     }
 
     >ul {
@@ -85,6 +119,14 @@
         font-weight: 400;
         line-height: 1.5em;
 
+        @include media-query(tablet) {
+            font-size: 16px;
+        }
+
+        @include media-query(mobile) {
+            font-size: 12px;
+            padding: 25px;
+        }
     }
 }
 
