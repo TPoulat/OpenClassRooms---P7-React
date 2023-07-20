@@ -1,4 +1,4 @@
-.home__housing {
+.home__logement {
     width: fit-content;
     background-color: #F6F6F6;
     display: flex;
@@ -7,15 +7,14 @@
     margin: 2% 6%;
     padding: 2%;
     border-radius: 20px;
-
     @include media-query(tablet) {
-        margin: 2% 5%;
-    }
+    margin: 2% 5%;
+}
 
-    @include media-query(mobile) {
-        width: 90%;
-        margin: 2% 5%;
-        padding: 0%;
-        background-color: #FFFFFF;
-    }
+@include media-query(mobile) {
+    width: 90%;
+    margin: 2% 5%;
+    padding: 0%;
+    background-color: #FFFFFF;
+}
 }

@@ -1,0 +1,82 @@
+.carrousel {
+  display: flex;
+  position: relative;
+  width: 88%;
+  height: 415px;
+  margin: 0% 6%;
+
+  @include media-query(tablet) {
+    width: 90%;
+    height: 315px;
+    margin: 0% 5%;
+  }
+
+  @include media-query(mobile) {
+    width: 90%;
+    height: 255px;
+    margin: 0% 5%;
+  }
+
+  &_pic {
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+
+    @include media-query(tablet) {
+      border-radius: 17px;
+    }
+
+    @include media-query(mobile) {
+      border-radius: 10px;
+    }
+  }
+
+  &_rightArrow {
+    position: absolute;
+    width: 46px;
+    top: 40%;
+    right: 3%;
+    opacity: 0.6;
+    cursor: pointer;
+
+
+    @include media-query(tablet) {
+      width: 32px;
+    }
+
+    ;
+
+    @include media-query(mobile) {
+      width: 12px;
+      top: 45%;
+    }
+
+    ;
+  }
+
+  &_leftArrow {
+    width: 46px;
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    opacity: 1;
+    cursor: pointer;
+
+    @include media-query(tablet) {
+      width: 32px;
+    }
+
+    @include media-query(mobile) {
+      width: 12px;
+      top: 45%;
+    }
+  }
+
+  &_count {
+    font-size: 18px;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+  }
+}

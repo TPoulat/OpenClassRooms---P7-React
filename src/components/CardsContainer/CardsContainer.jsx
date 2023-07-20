@@ -1,6 +1,6 @@
 import React from "react";
 import Cards from "../Cards/Cards";
-import data from "../../Datas/logementList.json";
+import data from "../../Datas/logementData.json";
 
 function CardsContainer() {
   const logementData = data; 

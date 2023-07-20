@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import "./styles/index.scss";
 import Home from './pages/Home/'
 import About from './pages/About/About'
-import Fiche from  './pages/Fiche/Fiche'
+import Logement from  './pages/Logement/Logement'
 import Error from './pages/Error/Error'
-import "./styles/index.scss";
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 
@@ -16,7 +16,7 @@ root.render(
           <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/Fiche/:id" element={<Fiche />} />
+                <Route path="/Logement/:id" element={<Logement />} />
                 <Route path="/About" element={<About />} />
                 <Route path="/*" element={<Error />} />
                 <Route path="/404" element={<Error />} />

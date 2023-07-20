@@ -1,24 +1,30 @@
-import React from 'react'
-import PropTypes from 'prop-types'
- 
-function Banner({image}) {
-  const bannerTitle = "Chez vous, partout et ailleurs";
+import React from "react";
+import PropTypes from "prop-types";
 
-    return (
-        <div className='banner'>
-            <img className='banner_img' alt="Image de la bannière" src={image} />
-            <h1 className='banner_text'>{bannerTitle}</h1>
-         </div>
-      )
-    }
+
+function Banner({ image, isAboutPage }) {
+  const bannerText = "Chez vous,\n partout et ailleurs";
+  
+  return (
+    
+    <div className={`banner ${isAboutPage ? 'is-about-page' : ''}`}>
+      <img
+        src={image}
+        alt="une vue sur des montagnes de toutes beautées"
+        className="banner_img"
+      />
+      {!isAboutPage && <h1 className="banner_text">{bannerText}</h1>}
+    </div>
+  );
+}
 
 Banner.propTypes = {
   image: PropTypes.string.isRequired,
-  
-}
+  isAboutPage: PropTypes.bool,
+};
 
 Banner.defaultProps = {
-    title: 'Chez vous, partout et ailleurs'
-}
+  isAboutPage: false,
+};
 
-export default Banner
+export default Banner;
