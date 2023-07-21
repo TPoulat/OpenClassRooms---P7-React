@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 
 function Banner({ image, isAboutPage }) {
-  const bannerText = "Chez vous,\n partout et ailleurs";
+  const bannerText = "Chez vous, partout et ailleurs";
   
   return (
     
