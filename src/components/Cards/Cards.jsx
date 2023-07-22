@@ -13,8 +13,8 @@ function Card({id, title, cover}) {
 }
 
 Card.propTypes = {
-    id: PropTypes.string,
-    title: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+    title: PropTypes.string,
     cover : PropTypes.string,    
   }
 
