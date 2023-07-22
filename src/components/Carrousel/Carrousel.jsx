@@ -39,8 +39,8 @@ function Carrousel({ id, title, pictures}) {
 }
 
 Carrousel.propTypes = {
-    id: PropTypes.string,
-    title: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+    title: PropTypes.string,
     pictures : PropTypes.string,    
   }
 
