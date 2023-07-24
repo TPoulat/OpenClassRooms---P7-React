@@ -39,11 +39,6 @@
         height: 0px;
         display: none;
         opacity: 0;
-        /*       @if $visible {
-            display: flex;
-            height: fit-content;
-            opacity: 1;
-        }; */
 
         &__CollapseText {
             display: flex;

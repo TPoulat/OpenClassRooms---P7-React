@@ -27,7 +27,7 @@ function LogementInfos({ title, location, tags, host, rating }) {
 }
 
 LogementInfos.propTypes = {
-    title: PropTypes.string.isRequired,
+    title: PropTypes.string,
     location: PropTypes.string,
     tags: PropTypes.string,
     host: PropTypes.string,

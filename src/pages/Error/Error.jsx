@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 function Error () {
 
-    const TextError= "Oups! La page que vous demandez n'existe pas. "
+    const TextError= "Oups! La page que vous demandez n'existe pas. ";
     
     return (
 
